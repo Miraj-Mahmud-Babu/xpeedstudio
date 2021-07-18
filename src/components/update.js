@@ -17,7 +17,7 @@ function List() {
     const [basicTitle, setBasicTitle] = useState()
 
     useEffect(() => { // pull data from api
-        fetch("http://127.0.0.1/miraj/api/get_form.php?id=1").then((res) => res.json()).then((result) => {
+        fetch("http://localhost/api/get_form.php?id=1").then((res) => res.json()).then((result) => {
             console.log("skl new update", result.data.fields[0]);
             // const ar = []
             // Object.keys(result.data.headers[0]).map((val, index) => {

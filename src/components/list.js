@@ -11,7 +11,7 @@ function List() {
 
 
     useEffect(() => { // pull data from api
-        fetch("http://127.0.0.1/miraj/api/list.php").then(res => res.json()).then((result) => {
+        fetch("http://localhost/api/list.php").then(res => res.json()).then((result) => {
             console.log("skl ", result.data.rows);
             console.log("skl ", result.data.headers[0]);
             const ar = []
